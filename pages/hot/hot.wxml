@@ -1,0 +1,53 @@
+<!--pages/hot/hot.wxml-->
+<view class='list-msg'>
+
+	<view class="selects">
+		<!-- 一级下拉框  -->
+		<view class='list-msg2' bindtap='bindShowMsg' data-id="1">
+			<text>{{tihuoWay}}</text>
+			<text>></text>
+		</view>
+
+		<!-- 下拉需要显示的列表 -->
+		<view class="select_box" wx:if="{{select}}">
+			<view class="select_one" wx:for-index="key" wx:key="key" wx:for="{{catelist}}" catchtap="mySelect" data-cid="{{item.cat_id}}" data-id="1" data-name="{{item.cat_name}}">{{item.cat_name}}</view>
+		</view>
+		<!-- 一级下拉框 -->
+		<!-- 二级下拉框 -->
+		<view class='list-msg2' bindtap='bindShowMsg' data-id="2">
+			<text>{{tihuoWay2}}</text>
+			<text>></text>
+
+			<!-- 下拉需要显示的列表 -->
+			<view class="select_box" wx:if="{{select2}}">
+				<view class="select_one" wx:for-index="key" wx:key="key" wx:for="{{catelist2}}" catchtap="mySelect" data-cid="{{item.cat_id}}" data-id="2" data-name="{{item.cat_name}}">{{item.cat_name}}</view>
+			</view>
+		</view>
+		<!-- 二级下拉框 -->
+
+		<!-- 三级下拉框 -->
+		<view class='list-msg2' bindtap='bindShowMsg' data-id="3">
+			<text>{{tihuoWay3}}</text>
+			<text>></text>
+
+			<!-- 下拉需要显示的列表 -->
+			<view class="select_box" wx:if="{{select3}}">
+				<view class="select_one" wx:for-index="key" wx:key="key" wx:for="{{catelist3}}" catchtap="mySelect" data-cid="{{item.cat_id}}" data-id="3" data-name="{{item.cat_name}}">{{item.cat_name}}</view>
+			</view>
+		</view>
+		<!-- 三级下拉框 -->
+	</view>
+
+	<view class="goodlist">
+		<navigator url="/pages/goods/goods?id={{item._id}}"  wx:for-index="key" wx:key="key"  wx:for="{{goodslist.goods}}" class="allits" hover-class="hov-cla">
+			<text class="its">商品名称：{{item.goods_name}}</text>
+			<text class="its">商品价格：{{item.goods_price}}</text>
+			<text class="its">商品数量：{{item.goods_number}}</text>
+			<text class="its" >商品重量：{{item.goods_weight}}</text>
+		</navigator>
+	</view>
+	<view>
+		<view class="isruncss" wx:if="{{isrun}}">正在加载。。。</view>
+		<view class="isruncss" wx:else>我有我的底线哦！！！</view>
+	</view>
+</view>

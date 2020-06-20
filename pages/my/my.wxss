@@ -1,0 +1,45 @@
+/* pages/my/my.wxss */
+.title {
+  width: 750rpx;
+  height: 250rpx;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.an {
+  display: flex;
+}
+
+.avatar {
+  margin-top: 40rpx;
+  margin-left: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: aqua;
+  border-radius: 50rpx;
+}
+
+.name {
+  margin: 55rpx;
+}
+
+.items{
+  font-size: 32rpx;
+  position: absolute;
+  bottom: 0;
+  width: 750rpx;
+}
+.item{
+  margin: 10rpx 0;
+  text-align: center;
+  display: block;
+  line-height: 100rpx;
+  background-color: #eee;
+  height: 100rpx;
+}
+
+.itemhover{
+  background-color: #aaa;
+}

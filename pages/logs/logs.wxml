@@ -1,0 +1,12 @@
+<view class="bgm">
+	<image class="img" src="http://127.0.0.1/public/logo.png"></image>
+
+	<form>
+		<input class="inp" data-name="name" bindinput="setinfo" value="{{userinfo.username}}" placeholder="请输入用户名" type="text"></input>
+		<input class="inp" data-name="pwd" bindinput="setinfo" value="{{userinfo.password}}" placeholder="请输入密码" password="{{true}}"></input>
+		<view class="btn">
+      <button class="mini-btn btn" bindtap="dl" type="primary" size="mini" form-type="submit">立即登录</button>
+			<button class="mini-btn btn" bindtap="zc" type="default" size="mini">免费注册</button>
+		</view>
+	</form>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/my/my.wxml-->
+<view class="title">
+	<text>我的</text>
+	<view class="an">
+		<image class="avatar" src="{{avatar}}"></image>
+		<text class="name">{{username}}</text>
+	</view>
+</view>
+<view class="items">
+	<view hover-class="itemhover" bindtap="gotofav" class="item">我的收藏</view>
+	<view hover-class="itemhover" bindtap="gototrolley" class="item">购物车</view>
+	<view hover-class="itemhover" bindtap="" class="item">我的订单</view>
+	<view hover-class="itemhover" bindtap="cleartoken" class="item">退出登录</view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/favorites/favorites.wxml-->
+<view class="container">
+	<view class="goodlist">
+		<navigator url="/pages/goods/goods?id={{item._id}}" wx:for-index="key" wx:key="key" wx:for="{{goodslist}}" class="allits" hover-class="hov-cla">
+			<text class="its">商品名称：{{item.goods_name}}</text>
+			<text class="its">商品价格：{{item.goods_price}}</text>
+			<text class="its">商品数量：{{item.goods_number}}</text>
+			<text class="its" >商品重量：{{item.goods_weight}}</text>
+		</navigator>
+	</view>
+</view>

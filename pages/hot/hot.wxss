@@ -1,0 +1,87 @@
+/* pages/hot/hot.wxss */
+.list-msg {
+  background-color: #fff;
+  position: relative;
+  font-size: 32rpx;
+}
+
+.selects{
+  display: flex;
+}
+
+.list-msg2 {
+  flex: 1;
+  margin: 5rpx 5rpx 0;
+  width: min-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 5rpx 5rpx;
+}
+
+.select_box {
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 250rpx;
+  height: 300rpx;
+  overflow-y: scroll !important;
+  position: absolute;
+  top: 75rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.5s;
+}
+
+@keyframes myfirst {
+  from {
+    height: 0rpx;
+  }
+
+  to {
+    height: 210rpx;
+  }
+}
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.goodlist {
+  flex-direction: column;
+  display: flex;
+  border: 1rpx solid #eee;
+  border-radius: 40rpx;
+}
+
+.goodlist .allits {
+  display: flex;
+  padding: 40rpx;
+  background-color: #eee;
+  flex-direction: column;
+  border-bottom: 1rpx solid #eee;
+  margin: 10rpx;
+  border-radius: 40rpx;
+  /* flex: 1; */
+}
+
+.hov-cla {
+  background-color: #ccc !important;
+}
+
+.isruncss {
+  text-align: center;
+  margin: 10rpx;
+  /* color: yellow; */
+
+}

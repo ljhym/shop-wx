@@ -1,0 +1,44 @@
+<!--pages/register/register.wxml-->
+
+<form catchsubmit="formSubmit">
+	<view>
+		<view class="edit-list">
+			<view class="items">
+				<view>头像</view>
+				<view class="avatar">
+					<image src="{{avatar}}" bindtap='changeAvatar'></image>
+				</view>
+			</view>
+
+			<view class="items">
+				<view>昵称：</view>
+				<input placeholder="请输入用户名" name="username" type="text"></input>
+			</view>
+			<view class="items">
+				<view>密码：</view>
+				<input placeholder="请输入密码" name="password" type="text" password="true"></input>
+			</view>
+			<view class="items">
+				<view>电话：</view>
+				<input placeholder="请输入电话号码" name="mobile" type="text"></input>
+			</view>
+			<view class="items">
+				<view>性别：</view>
+				<input placeholder="男" name="sex" type="text"></input>
+			</view>
+			<view class="items">
+				<view>邮箱：</view>
+				<input placeholder="请输入邮箱" name="email" type="text"></input>
+			</view>
+			<view class="items">
+				<view>地址：</view>
+				<input placeholder="请输入地址" name="address" type="text"></input>
+			</view>
+		</view>
+
+	</view>
+	<view class="btncs">
+		<button style="margin: 30rpx 0" bindtap="gotosubmit">返回登录</button>
+		<button style="margin: 30rpx 0" type="primary" formType="submit">免费注册</button>
+	</view>
+</form>

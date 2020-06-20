@@ -1,0 +1,32 @@
+<!--pages/goods/goods.wxml-->
+<swiper class="sidles">
+	<swiper-item wx:for-index="key" wx:key="key" wx:for="{{goods.pics}}">
+		<image src="http://127.0.0.1/public/avatar/{{item.pic}}" mode="aspectFilt" />
+	</swiper-item>
+</swiper>
+<view class="goodsinfo">
+	<text class="its">商品名称：{{goods.goods_name}}</text>
+	<text class="its">商品价格：{{goods.goods_price}}</text>
+	<text class="its">商品数量：{{goods.goods_number}}</text>
+	<text class="its" >商品重量：{{goods.goods_weight}}</text>
+	<text class="its" >商品参数：{{}}</text>
+	<text class="its" >商品简介：{{goods.goods_introduce}}</text>
+</view>
+
+<view class="gmbtn">
+	<text>价格：</text>
+	<view class="prices">{{pay}}</view>
+	<view class="cos">
+		<text>数量：</text>
+		<view hover-class="btg1" class="jian btg" bindtap="numde">-</view>
+		<!-- <view class="com">{{num}}</view> -->
+		<input class="com" type="number" value="{{num}}" bindinput="inpnum"></input>
+		<view hover-class="btg1" class="jia btg" bindtap="numup">+</view>
+	</view>
+</view>
+
+<view class="btn2">
+	<view bindtap="sc" hover-class="bgt2" class="{{isfavourites? 'iscs' : 'cs'}}">收藏</view>
+	<view bindtap="trolley" class="bt3">加入购物车</view>
+	<view bindtap="cz" class="bt4">立即购买</view>
+</view>

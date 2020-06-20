@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/hot/hot",
+    "pages/my/my",
+    "pages/goods/goods",
+    "pages/register/register",
+    "pages/trolley/trolley",
+    "pages/favorites/favorites"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "电商购物",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#444",
+    "selectedColor": "#219bf3",
+    "backgroundColor": "#e0e0e0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "./assets/tabs/home.png",
+        "selectedIconPath": "./assets/tabs/home-active.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/hot/hot",
+        "iconPath": "./assets/tabs/message.png",
+        "selectedIconPath": "./assets/tabs/message-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "./assets/tabs/profile.png",
+        "selectedIconPath": "./assets/tabs/profile-active.png"
+      }
+    ]
+  }
+}

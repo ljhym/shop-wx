@@ -1,0 +1,112 @@
+/* pages/goods/goods.wxss */
+
+
+.sidles{
+  height: 380rpx;
+}
+.sidles image{
+ width: 100%;
+ height: 100%;
+}
+
+.goodsinfo{
+  display: flex;
+  flex-direction: column;
+  font-size: 40rpx;
+}
+
+
+.gmbtn{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  bottom: 120rpx;
+  left: 0;
+  background-color: #eee;
+  margin: 0;
+  padding: 0 30rpx 0 30rpx ;
+  color: #000;
+  text-align: center;
+  font-size: 40rpx;
+  /* padding: 20rpx; */
+}
+.cos{
+  flex: 1;
+  position: absolute;
+  display: flex;
+  right: 110rpx;
+}
+.com{
+  max-width: 120rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  padding: 0  20rpx 0 ;
+}
+.prices{
+  line-height: 100rpx;
+  height: 100rpx;
+  padding: 0  20rpx 0 ;
+}
+.btg{
+  font-size: 70rpx;
+  width: 60rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #aaa;
+  color: #000;
+}
+.btg1{
+  background-color: #fff;
+  color: #000;
+}
+.jian{
+  font-size: 90rpx;
+}
+.btn2{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  bottom: 10rpx;
+  left: 0;
+  /* background-color: #aaa; */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 40rpx;
+  /* padding: 20rpx; */
+}
+.cs{
+  flex: 1;
+  background-color: #eee;
+  border-radius: 20rpx;
+  color: #000;
+}
+.iscs{
+  flex: 1;
+  background-color: rgb(255, 251, 9);
+  border-radius: 20rpx;
+  color: rgb(255, 0, 0);
+}
+.bgt2{
+  flex: 1;
+  background-color: #aaa;
+  border-radius: 20rpx;
+  color: #000;
+}
+.bt3{
+  margin-left: 20rpx;
+  flex: 3.5;
+  border-radius: 20rpx;
+  background-color: rgb(255, 217, 0);
+}
+.bt4{
+  flex: 3;
+  margin-left: 20rpx;
+  border-radius: 20rpx;
+  background-color: red;
+}

@@ -1,0 +1,30 @@
+.bgm{
+  margin-top: 300rpx;
+  display: flex;
+  width: 750rpx;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  margin: 0 0 50rpx;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 150rpx;
+  border: solid 1rpx #ccc;
+}
+
+.inp {
+  width: 730rpx;
+  height: 70rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #ccc;
+  margin: 10rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin: 10rpx;
+  float: right;
+}

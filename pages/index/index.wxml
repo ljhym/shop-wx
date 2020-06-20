@@ -1,0 +1,35 @@
+<!-- index.wxml -->
+<view class="container">
+	<view class="search1">
+		<input confirm-type="search" placeholder="请输入搜索内容" value="{{query}}" bindblur="setquery" class="btn1"></input>
+		<view class="sea" bindtap="searchqu">搜索</view>
+	</view>
+
+
+	<!-- <swiper class="sidles">
+    <swiper-item>
+      <image src="/assets/images/banner-01.png" mode="aspectFilt" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/assets/images/banner-01.png" mode="aspectFilt"  />
+    </swiper-item>
+    <swiper-item>
+      <image src="/assets/images/banner-01.png" mode="aspectFilt"  />
+    </swiper-item>
+  </swiper> -->
+
+	<view class="goodlist">
+		<navigator url="/pages/goods/goods?id={{item._id}}" wx:for="{{goodslist.goods}}" wx:for-index="key" wx:key="key" class="allits" hover-class="hov-cla">
+			<text class="its">商品名称：{{item.goods_name}}</text>
+			<text class="its">商品价格：{{item.goods_price}}</text>
+			<text class="its">商品数量：{{item.goods_number}}</text>
+			<text class="its" >商品重量：{{item.goods_weight}}</text>
+		</navigator>
+	</view>
+	<view>
+		<view class="isruncss" wx:if="{{isrun}}">正在加载。。。</view>
+		<view class="isruncss" wx:else>我有我的底线哦！！！</view>
+	</view>
+
+
+</view>

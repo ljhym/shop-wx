@@ -1,0 +1,31 @@
+/* pages/favorites/favorites.wxss */
+
+.container {
+  height: 380rpx;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 32rpx;
+}
+
+.goodlist {
+  flex-direction: column;
+  display: flex;
+  border: 1rpx solid #eee;
+  border-radius: 40rpx;
+}
+
+.goodlist .allits {
+  display: flex;
+  padding: 40rpx;
+  background-color: #eee;
+  flex-direction: column;
+  border-bottom: 1rpx solid #eee;
+  margin: 10rpx;
+  border-radius: 40rpx;
+  /* flex: 1; */
+}
+
+.hov-cla {
+  background-color: #ccc !important;
+}
